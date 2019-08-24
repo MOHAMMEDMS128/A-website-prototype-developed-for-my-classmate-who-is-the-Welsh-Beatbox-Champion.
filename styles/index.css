@@ -1,0 +1,103 @@
+#page-wrap {
+  width: 800px;
+  margin: 0 auto;
+}
+{
+  padding: 0;
+  margin: 0;
+}
+.fit {
+  width: 100%;
+  height: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: relative;
+  margin: 0;
+  padding: 0;
+}
+.center {
+  display: block;
+  margin: auto;
+}
+{
+  padding: 0;
+  margin: 0;
+}
+
+
+#content {
+  padding: 5px 10px 5px 0px;
+  margin: 10px 10px 10px 0px;
+  float: cover;
+  display: inline;
+  margin-top: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  text-align: center;
+}
+#content h1 {
+  font-size: 30px;
+  border-bottom: 100% solid black;
+  width: cover;
+  border-size: 100%;
+  font-family: "Lobster", cursive;
+  color: #662200;
+  border-style: solid;
+  border-width: 4px 18px 4px 20px;
+  text-align: center;
+  margin-top: -4px;
+  margin-bottom: 100px;
+  margin-right: 0px;
+  margin-left: 275px;
+}
+#content h2 {
+  font-size: 20px;
+  color: #800033;
+  text-align: center;
+  margin-bottom: 70px;
+  margin-right: 0px;
+  margin-left: 275px;
+  margin-top: -100px;
+  position: top;
+  background-color: white;
+}
+#button {
+  padding: 5px 10px 5px 0px;
+  margin: 10px 10px 10px 0px;
+  float: cover;
+  display: absolute;
+  margin-top: 0;
+  position: center;
+  left: center;
+  top: 100px;
+  text-align: center;
+  border-radius: 30px;
+}
+#button input[type=button] {
+  overflow: visible;
+  background-color: #66ccff;
+  color: black;
+  border: 60px solid ##990033;
+  position: absolute;
+  margin-top: 135px;
+  margin-bottom: 150px;
+  margin-right: 80px;
+  margin-left: -10px;
+  border-radius: 10px;
+  color: #08233e;
+  font: 16px Futura, "Lobster", cursive, sans-serif;
+  font-size: 40px;
+  cursor: pointer;
+
+}
+#button input[type=button]:hover {
+  background-color: #990033;
+  color: orange;
+  font-size: 50px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  margin-right: 80px;
+  margin-left: -10px;
+}

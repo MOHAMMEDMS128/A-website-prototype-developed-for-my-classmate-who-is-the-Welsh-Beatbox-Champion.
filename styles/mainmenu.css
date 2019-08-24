@@ -1,0 +1,116 @@
+html, 
+
+.myDiv { 
+    background-image: url("background.png");
+    -webkit-background-size: absolute;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: relative;
+  
+    
+}
+.image { 
+   position: fixed; 
+  margin-top: -10px;
+   border-radius : 6px;
+}
+
+h1 { 
+   position: absolute; 
+   top: 75px; 
+   left: 600px; 
+   width: 100%; 
+   color:orange;
+   font-size:50px;
+   font-family: "Lobster", cursive;
+}
+.form-row hide-inputbtns {
+  color: orange;
+}
+
+button {
+
+   order : solid 1px #b30961;
+  border-radius : 6px;
+  moz-border-radius : 6px;
+  font-size : 18px;
+  color : #ffffff;
+  padding : 7px 10px;
+  background : #8800ff;
+  background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#8800ff), color-stop(100%,#ff8c00));
+  background : -moz-linear-gradient(top, #8800ff 0%, #ff8c00 100%);
+  background : -webkit-linear-gradient(top, #8800ff 0%, #ff8c00 100%);
+  background : -o-linear-gradient(top, #8800ff 0%, #ff8c00 100%);
+  background : -ms-linear-gradient(top, #8800ff 0%, #ff8c00 100%);
+  background : linear-gradient(top, #8800ff 0%, #ff8c00 100%);
+  filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#8800ff', endColorstr='#ff8c00',GradientType=0 );
+  cursor:pointer;
+  border-radius: 10px;
+  margin-top:250px;
+  text-shadow: 1px 2px 5px #000,
+                 -1px -2px 5px #000;
+    transition: color .5s ease 2s, font-size .8s ease 0s;
+    text-align: center;
+ -ms-transform-origin: 100% 0%;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+   -webkit-animation: roll-out 1.2s ease-out ;
+  -moz-animation: roll-out 1.2s ease-out ;
+    animation: roll-out 1.2s ease-out ; 
+
+  -webkit-animation: scale-in 1.3s ease-out;
+  -moz-animation: scale-in 1.3s  ease-out;
+    animation: scale-in 1.3s ease-out;
+}
+@media all and (max-width: 768px)
+@-webkit-keyframes scale-in {
+     0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(1, 1); opacity: 1;}
+}
+
+@keyframes scale-in {
+    0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(1, 1);  opacity: 1;}
+}
+
+@-webkit-keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+@keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+
+
+button:hover {
+   border : solid 1px #288c1a;
+  border-radius : 20px 3px 20px 4px;
+  moz-border-radius : 20px 3px 20px 4px ;
+  -webkit-box-shadow : 0px 0px 1px rgba(0,0,0,0.7);
+  -moz-box-shadow : 0px 0px 1px rgba(0,0,0,0.7);
+  box-shadow : 0px 0px 1px rgba(0,0,0,0.7);
+  font-size : 20px bold;
+  color : #38c8d8;
+ transition: 0.7s;
+ background-color: #800033;
+ font-family: 'Lobster', cursive;
+ 
+}
+.footer {
+  position: absolute;
+  font-family: "Lobster", cursive;
+  color: #34BC09;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  text-align: left;
+}
+
+
+
+
+
+
+

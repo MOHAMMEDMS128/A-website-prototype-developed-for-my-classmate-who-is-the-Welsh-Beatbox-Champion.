@@ -1,0 +1,379 @@
+html {
+background:url(6.png) no-repeat;
+background-size:cover;
+height:100%;
+padding:-20px;
+}
+
+body {
+background-color:none;
+}
+
+nav {
+
+    background: #800033;
+    border: none;
+    padding: 0;
+    top: 0;
+    overflow: hidden;
+    position: fixed-right;
+}
+
+nav ul {
+    list-style: none;
+    float: absolute;
+    
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    font-family: 'Lobster', cursive;
+    font-weight: 15px;
+    color: #cffaf1;
+    font-size: 15px;
+    padding: 0 7px;
+    text-shadow: 1px 2px 5px #000,
+                 -1px -2px 5px #000;
+    transition: color .5s ease 0s, font-size .5s ease 0s;
+}
+
+
+
+
+a:hover {
+    color: orange;
+    font-size: 1.5em;
+}
+a.active {
+  background-color: orange;
+  
+}
+
+a { 
+   text-decoration: none;
+}
+
+
+
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.container {
+   margin: 0 auto;
+   padding: 20px 40px;
+   background:white;
+}
+
+#sticky-social {
+   left: 0;
+   position: absolute;
+   top: 256px;
+   display: inline;
+}
+
+#sticky-social a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 35px;
+   font: 16px "Open Sans", sans-serif;
+   line-height: 35px;
+   position: relative;
+   text-align: center;
+   width: 35px;
+}
+
+#sticky-social a:hover span {
+   left: 100%;
+}
+
+#sticky-social a span {
+   line-height: 35px;
+   left: -120px;
+   position: absolute;
+   text-align:center;
+   width:120px;
+}
+
+#st#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
+
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
+
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span { background: #00aced; }
+
+#sticky-social a[class*="soundcloud"],
+#sticky-social a[class*="soundcloud"]:hover,
+#sticky-social a[class*="soundcloud"] span { background: #FB762E; }
+
+
+#footer {
+
+  position: fixed;
+  margin-top: 0; 
+  height: 50px;
+  width: 100%;
+  clear: both;
+} 
+.image { 
+   position: relative; 
+  margin-top: -10px;
+}
+
+h1 { 
+   position: absolute; 
+   top: 40px; 
+   left: 900px; 
+   width: 100%; 
+   color:orange;
+   font-size:50px;
+}
+
+p {
+text-overflow:auto;
+background-color:#800033;
+margin-bottom:#99003d;
+font-weight:700;
+font-family:Helvetica;
+color:#9f3;
+text-align:center;
+}
+
+#feedback-page {
+text-align:center;
+}
+
+#form-main {
+width:100%;
+float:left #16e2dc;
+padding-top:0;
+}
+
+#form-div {
+background-color:rgba(72,72,72,0.4);
+width:450px;
+float:left;
+left:50%;
+position:absolute;
+margin-top:40px;
+margin-left:-260px;
+-moz-border-radius:7px;
+-webkit-border-radius:7px;
+padding:35px 35px 50px;
+}
+
+.feedback-input {
+color:#3c3c3c;
+font-family:Helvetica, Arial, sans-serif;
+font-weight:500;
+font-size:18px;
+border-radius:0;
+line-height:22px;
+background-color:#fbfbfb;
+margin-bottom:10px;
+width:100%;
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+-ms-box-sizing:border-box;
+box-sizing:border-box;
+border:3px solid rgba(0,0,0,0);
+padding:13px 13px 13px 54px;
+}
+
+.feedback-input:focus {
+background:#fff;
+box-shadow:0;
+border:3px solid #3498db;
+color:#3498db;
+outline:none;
+padding:13px 13px 13px 54px;
+}
+
+.focused {
+color:#30aed6;
+border:#30aed6 solid 3px;
+}
+.feildset {
+background-size:20px 10px;
+background-position:11px 8px;
+
+margin-top:40%;	
+cursor: default;
+border:5px solid #fbfbfb; 
+ color:#fbfbfb;
+}
+
+legend {
+  
+  border:3px solid  #9f3;;
+  color:#FF5733;
+  font-size:20px;
+  text-align:left;
+  }
+ 
+
+.example {
+	list-style: disc;
+  margin: 0;
+  padding: 0;
+	overflow: auto;
+	display: block;
+}
+input[type=radio   ]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+
+}
+input[type=radio   ]:not(old) + label{
+  display      : inline-block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+  color:white;
+  font-weight: 20px;
+}
+input[type=radio   ]:not(old) + label > span{
+  display          : inline-block;
+  width            : 0.875em;
+  height           : 0.875em;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 0.25em;
+  background       : rgb(224,224,224);
+  background-image :    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image : -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :         linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  vertical-align   : bottom;
+
+}
+input[type=radio   ]:not(old):checked + label > span{
+  background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
+}
+input[type=radio]:not(old):checked +  label > span > span{
+  display          : block;
+  width            : 0.5em;
+  height           : 0.5em;
+  margin           : 0.125em;
+  border           : 0.0625em solid rgb(115,153,77);
+  border-radius    : 0.125em;
+  background       : rgb(153,204,102);
+  background-image :    -moz-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :     -ms-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :      -o-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image : -webkit-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :         linear-gradient(rgb(179,217,140),rgb(153,204,102));
+}
+
+
+.example:focus {
+background-image:url();
+background-size:30px 30px;
+background-position:11px 8px;
+background-repeat:no-repeat;
+margin-top:0;
+}
+
+#name {
+background-size:30px 30px;
+background-position:11px 8px;
+background-repeat:no-repeat;
+margin-top:10px;
+}
+
+#name:focus {
+background-image:url();
+background-size:30px 30px;
+background-position:11px 8px;
+background-repeat:no-repeat;
+margin-top:0;
+}
+
+textarea {
+width:100%;
+height:150px;
+line-height:150%;
+resize:vertical;
+}
+
+input:hover,textarea:hover,input:focus,textarea:focus {
+background-color:#FFF;
+}
+
+#button-blue {
+font-family:Montserrat, Arial, Helvetica, sans-serif;
+float:left;
+width:100%;
+border:#fbfbfb solid 4px;
+cursor:pointer;
+background-color:#800033;
+color:#FFF;
+font-size:24px;
+padding-top:22px;
+padding-bottom:22px;
+-webkit-transition:all .3s;
+-moz-transition:all .3s;
+transition:all .3s;
+margin-top:-4px;
+font-weight:700;
+}
+
+#button-blue:hover {
+background-color:rgba(0,0,0,0);
+color:#0493bd;
+}
+
+.submit:hover {
+color:#9f3;
+}
+
+.ease {
+width:0;
+height:74px;
+background-color:#fbfbfb;
+-webkit-transition:.3s ease;
+-moz-transition:.3s ease;
+-o-transition:.3s ease;
+-ms-transition:.3s ease;
+transition:.3s ease;
+}
+
+.submit:hover .ease {
+width:100%;
+background-color:#FFF;
+}
+
+#email,#email:focus,#comment {
+background-image:url();
+background-size:30px 30px;
+background-position:11px 8px;
+background-repeat:no-repeat;
+}
+
+@media only screen and max-width 580px{
+#form-div {
+left:3%;
+margin-right:3%;
+width:88%;
+margin-left:0;
+padding-left:3%;
+padding-right:3%;
+}

@@ -1,0 +1,116 @@
+
+nav {
+
+    background: none;
+    border: none;
+    padding: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+nav ul {
+    list-style: disc;
+    float: absolute;
+    
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    font-family: 'Lobster', cursive;
+    font-weight: 15px;
+    color: #cffaf1;
+    font-size: 15px;
+    padding: 0 7px;
+    text-shadow: 1px 2px 5px #000,
+                 -1px -2px 5px #000;
+    transition: color .5s ease 0s, font-size .5s ease 0s;
+}
+
+
+
+
+a:hover {
+    color: orange;
+    font-size: 1.5em;
+}
+a.active {
+  background-color: orange;
+  
+}
+
+a { 
+   text-decoration: none;
+}
+
+
+
+
+ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+.container {
+   margin: 0 auto;
+   padding: 20px 40px;
+   background:white;
+}
+
+#sticky-social {
+   left: 0;
+   position: fixed;
+   top: 150px;
+   display: inline;
+}
+
+#sticky-social a {
+   background: #333;
+   color: #fff;
+   display: block;
+   height: 35px;
+   font: 16px "Open Sans", sans-serif;
+   line-height: 35px;
+   position: relative;
+   text-align: center;
+   width: 35px;
+}
+
+#sticky-social a:hover span {
+   left: 100%;
+}
+
+#sticky-social a span {
+   line-height: 35px;
+   left: -120px;
+   position: absolute;
+   text-align:center;
+   width:120px;
+}
+
+#st#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
+
+#sticky-social a[class*="facebook"],
+#sticky-social a[class*="facebook"]:hover,
+#sticky-social a[class*="facebook"] span { background: #3b5998; }
+
+#sticky-social a[class*="twitter"],
+#sticky-social a[class*="twitter"]:hover,
+#sticky-social a[class*="twitter"] span { background: #00aced; }
+
+#sticky-social a[class*="soundcloud"],
+#sticky-social a[class*="soundcloud"]:hover,
+#sticky-social a[class*="soundcloud"] span { background: #FB762E; }
+
+
+#footer {
+
+  position: fixed;
+  margin-top: 180px; 
+  height: 180px;
+  clear: both;
+} 

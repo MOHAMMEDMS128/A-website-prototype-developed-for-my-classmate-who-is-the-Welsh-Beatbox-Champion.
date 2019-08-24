@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>The Welsh Beatbox Champion Ali Abed</title>
+     <div class="image">
+      <img src="img/logo.png" alt="logo" height="280px" width="100%" />
+     <h1> Booking Inquiry </h1>
+</div> 
+    
+      <center>
+<nav>
+            <ul class="mynav">
+                <li class="highlight"><a href="index.html" title="Home" onClick="parent.location='index.html'">Home</a></li>
+                <li><a href="mainmenu.html" title="Main Menu" onClick="parent.location='mainmenu.html'">Main Menu</a></li>
+                <li><a href="basicinfo.html" title="Basic Inf" onClick="parent.location='basicinfo.html'">Basic Info</a></li>
+                <li><a href="photogallery.html" title="Photo Gallery" onClick="parent.location='photogallery.html'">Photo Gallery</a></li>
+                <li><a href="videos.html" title="Videos" onClick="parent.location='videos.html'">Videos</a></li>
+                <li><a href="feedback.html" title="Feedback Form" onClick="parent.location='feedback.html' class=active ">Feedback Form</a></li>
+                <li><a href="multimedia.html" title="The Use Of Multimedia On The web" onClick="parent.location='multimedia.html'">Multimedia On The Web</a></li>
+                <li><a href="music.html" title="Music" onClick="parent.location='music.html'">Music</a></li>
+                <li><a href="booking.html" title="Booking Inquiries" onClick="parent.location='booking.html'">Booking Inquiries</a></li>
+                <li><a href="about.html" title="About The Author" onClick="parent.location='about.html'">About</a></li>
+            </ul>
+        </nav>
+    </center>
+     <aside id="sticky-social">
+    <ul>
+        <li><a href="https://www.facebook.com/aliabed95" class="entypo-facebook" target="_blank"><img src="img/facebook1.png"><span>Ali Abed on Facebook</span></a></li>
+        <li><a href="https://www.facebook.com/ACloudCardiff" class="entypo-facebook" target="_blank"><img src="img/facebook1.png"><span>A-Cloud on Facebook</span></a></li>
+        <li><a href="https://twitter.com/acloudcardiff" class="entypo-twitter" target="_blank"><img src="img/twitter.png"><span>A-Cloud on Twitter</span></a></li>
+        <li><a href="https://soundcloud.com/user-415546624" class="entypo-soundcloud" target="_blank"><img src="img/soundcloud.png"><span>A-Cloud on SoundCloud</span></a></li>
+            </ul>
+</aside>
+    <p> <strong>Please note that</strong> weekend events cost more than weekday ones. All our events covered with: Bass Guitar, Saxophone, Trumpet and may be more.</p>
+    <link rel="stylesheet" href="styles/booking.css">
+    <script>
+        if (datefield.type != "date") {
+            jQuery(function($) {
+                $('#date').datepicker();
+            })
+        }
+    </script>
+</head>
+
+<body>
+<button onclick="topFunction()" id="backtop" title="Go to top">Back To Top</button>
+    <table border="5">
+        <tr>
+            <th>Friday night</th>
+            <th>Saturday night</th>
+            <th> Weekday</th>
+        </tr>
+        <tr>
+            <td>From &#163;350</td>
+            <td>From &#163;450</td>
+            <td>From &#163;200</td>
+        </tr>
+    </table>
+
+    <h2>Booking Inquiry Form</h2>
+    <div id="form-main">
+        <div id="form-div">
+            <form class="form" id="form1" action="" method="POST" onsubmit=" return validateForm(), ShowMessage()" enctype="multipart/form-data">
+
+                <p class="name">
+                    <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="Name" id="name" required />
+                </p>
+
+                <p class="email">
+                    <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Email" required />
+                </p>
+                <div id="event">
+                    <select name="Select event" class="validate[required,custom[select event]] feedback-input" id="event" placeholer="Please Select Event" required>
+                        <option value="">Select Event:</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="private party">Private Party</option>
+                        <option value="public event">Public Event</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <br>
+                <div id="interested">
+                    <select type="checkbox" name="Interested" class="validate[required,custom[interested]] feedback-input" id="interested" placeholer="Please Select Music" required>
+                        <option value="">Inerested In</option>
+                        <option value="rock music">Rock Music</option>
+                        <option value="hiphop music">HipHop Music</option>
+                        <option value="reggae">Reggae</option>
+                        <option value="rapping">Rapping</option>
+                    </select>
+                </div>
+                <div class="form-row hide-inputbtns">
+                    <label for="Date">Date</label>
+                    <input class="Date" type="date" placeholder="DD-MM-YYYY" data-date-split-input="true" required />
+                    <script type="text/javascript">
+                        webshim.setOptions('forms-ext'); {
+                            replaceUI: 'auto',
+                            types: 'date',
+                            date: {
+                                nopicker: true
+                            }
+                        };
+                        webshim.polyfill('forms forms-ext');
+
+                        $(function() {
+                            $('[type="date"].birthdate').prop('max', function() {
+                                return new Date().toJSON().split('T')[0];
+                            });
+                        });
+                    </script>
+                </div>
+                <div id="location">
+                    <input name="adr" type="address" class="validate[required,custom[email]] feedback-input" id="location" placeholder="Event Location" required />
+                    </p>
+                    <p class="text">
+                        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="comment" placeholder="General Enquiry" required></textarea>
+                    </p>
+                    <div class="submit">
+
+                        <input type="submit" value="SEND" id="button-blue" onclick=" return myFunction();" />
+                        <div class="ease"></div>
+                    </div>
+
+            </form>
+            <script>
+                function validateForm() {
+                    var name = document.forms["form1"]["name"].value;
+                    if (name == "") {
+                        alert("Please enter your name");
+                        return false;
+                    }
+
+                    var email = document.forms["form1"]["email"].value;
+                    var atpos = email.indexOf("@");
+                    var dotpos = email.lastIndexOf(".");
+                    if (atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) {
+                        alert("Please enter a valid e-mail address");
+                        return false;
+                    }
+                    var text = document.forms["form1"]["comment"].value;
+                    if (name == "") {
+                        alert("Please enter your comments/suggestions");
+                        return false;
+                    }
+
+
+                }
+            </script>
+            <script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("backtop").style.display = "block";
+    } else {
+        document.getElementById("backtop").style.display = "none";
+    }
+}
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
+    </body>
+
+</html>

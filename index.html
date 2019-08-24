@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The Welsh Beatbox Champion Ali Abed</title>
+  <link href="styles/index.css" rel="stylesheet">
+ <div id="content">
+    <h1>Welcome To The Welsh Beatbox Champion <strong>Ali Abed</strong></h1>
+    <h2>Please Note This Website Works Better With Google Chrome Browser</h2>
+  </div>
+</head>
+<body>
+<div class="loader"></div>
+<div id="page-wrap">
+  <embed hidden="true" src="audio/splash.mp3">
+
+  <div id="button">
+    <input onclick="parent.location='mainmenu.html'" type="button" value="Enter">
+  </div>
+  <img class="center fit" src="img/777.jpg"> 
+  <script src="jquery.js">
+  </script> 
+  <script language="JavaScript" type="text/javascript">
+   function set_body_height() { 
+     $('body').height($(window).height());
+   }
+   $(document).ready(function() {
+     $(window).bind('resize', set_body_height);
+     set_body_height();
+   });
+  </script> 
+  </div>
+</body>
+</html>

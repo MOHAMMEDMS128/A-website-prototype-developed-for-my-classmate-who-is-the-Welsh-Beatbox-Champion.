@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Welsh Beatbox Champion Ali Abed </title>
+    <div class="image">
+      <img src="img/logo.png" alt="logo" height="220px" width="100%" />
+      <h1>Welcome To Playlist</h1>
+</div> 
+    <link rel="stylesheet" href="styles/music.css">
+    <script type="text/javascript" src="jquery.js"></script>
+     <center>
+<nav>
+            <ul class="mynav">
+                <li class="highlight"><a href="index.html" title="Home" onClick="parent.location='index.html'">Home</a></li>
+                <li><a href="mainmenu.html" title="Main Menu" onClick="parent.location='mainmenu.html'">Main Menu</a></li>
+                <li><a href="basicinfo.html" title="Basic Inf" onClick="parent.location='basicinfo.html'">Basic Info</a></li>
+                <li><a href="photogallery.html" title="Photo Gallery" onClick="parent.location='photogallery.html'">Photo Gallery</a></li>
+                <li><a href="videos.html" title="Videos" onClick="parent.location='videos.html'">Videos</a></li>
+                <li><a href="feedback.html" title="Feedback Form" onClick="parent.location='feedback.html' class=active ">Feedback Form</a></li>
+                <li><a href="multimedia.html" title="The Use Of Multimedia On The web" onClick="parent.location='multimedia.html'">Multimedia On The Web</a></li>
+                <li><a href="music.html" title="Music" onClick="parent.location='music.html'">Music</a></li>
+                <li><a href="booking.html" title="Booking Inquiries" onClick="parent.location='booking.html'">Booking Inquiries</a></li>
+                <li><a href="about.html" title="About The Author" onClick="parent.location='about.html'">About</a></li>
+            </ul>
+        </nav>
+    </center>
+     <aside id="sticky-social">
+    <ul>
+        <li><a href="https://www.facebook.com/aliabed95" class="entypo-facebook" target="_blank"><img src="img/facebook1.png"><span>Ali Abed on Facebook</span></a></li>
+        <li><a href="https://www.facebook.com/ACloudCardiff" class="entypo-facebook" target="_blank"><img src="img/facebook1.png"><span>A-Cloud on Facebook</span></a></li>
+        <li><a href="https://twitter.com/acloudcardiff" class="entypo-twitter" target="_blank"><img src="img/twitter.png"><span>A-Cloud on Twitter</span></a></li>
+        <li><a href="https://soundcloud.com/user-415546624" class="entypo-soundcloud" target="_blank"><img src="img/soundcloud.png"><span>A-Cloud on SoundCloud</span></a></li>
+            </ul>
+</aside>
+</head>
+
+<body>
+<h2> There is a JavaScript plugin used in this page to make the playlist and the list of the music. I made all these music from <a href="http://www.buttonbass.com/TrapPianoPage.html" style="color: white">ButtonBass</a></h2>
+    <center>
+        <audio id="audio" preload="auto" tabindex="0" controls="" type="audio/mpeg">
+            <source type="audio/mp3" src="audio/23.mp3">
+        </audio>
+        <ol id="playlist">
+            <li class="mymusic" list-style-type: circle>
+                <a href="audio/ali.mp3">
+                Ali Beatboxing
+            </a>
+            </li>
+            <li>
+                <a href="audio/ali1.mp3">
+                Ali Beatboxing 2 
+            </a>
+            </li>
+            <li>
+                <a href="audio/5.mp3">
+                MY Music
+            </a>
+            </li>
+            <li>
+                <a href="audio/6.mp3">
+                Made up Music
+            </a>
+            </li>
+            <li>
+                <a href="audio/8.mp3">
+                Made up Music
+            </a>
+            </li>
+            <li>
+                <a href="audio/9.mp3">
+                Made up Music
+            </a>
+            </li>
+            <li>
+                <a href="audio/10.mp3">
+                Made up Music
+            </a>
+            </li>
+            <li>
+                <a href="audio/11.mp3">
+                Reggae Music
+            </a>
+            </li>
+            <li>
+                <a href="audio/12.mp3">
+                Reggae Music1 
+            </a>
+            </li>
+            <li>
+                <a href="audio/14.mp3">
+                Made up Music
+            </a>
+            </li>
+            <li>
+                <a href="audio/15.mp3">
+                Made up Music
+            </a>
+            </li>
+            <li>
+                <a href="audio/16.mp3">
+                Reggae Music2
+            </a>
+            </li>
+            <li>
+                <a href="audio/17.mp3">
+                Reggae Music 4
+            </a>
+            </li>
+            <li>
+                <a href="audio/18.mp3">
+                Reggae Music 3
+            </a>
+            </li>
+            <li>
+                <a href="audio/19.mp3">
+                Beatbox Mixed With Music
+            </a>
+            </li>
+
+        </ol>
+        </audio>
+    </center>
+    <script type="text/javascript">
+        var audio;
+        var playlist;
+        var tracks;
+        var current;
+
+        init();
+
+        function init() {
+            current = 0;
+            audio = $('audio');
+            playlist = $('#playlist');
+            tracks = playlist.find('li a');
+            len = tracks.length - 1;
+            audio[0].volume = .10;
+            playlist.find('a').click(function(e) {
+                e.preventDefault();
+                link = $(this);
+                current = link.parent().index();
+                run(link, audio[0]);
+            });
+            audio[0].addEventListener('ended', function(e) {
+                current++;
+                if (current == len) {
+                    current = 0;
+                    link = playlist.find('a')[0];
+                } else {
+                    link = playlist.find('a')[current];
+                }
+                run($(link), audio[0]);
+            });
+        }
+
+        function run(link, player) {
+            player.src = link.attr('href');
+            par = link.parent();
+            par.addClass('mymusic').siblings().removeClass('mymusic');
+            audio[0].load();
+            audio[0].play();
+        }
+    </script>
+
+
+
+    
+</body>
+
+</html>

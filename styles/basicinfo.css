@@ -1,0 +1,72 @@
+.image { 
+   position: relative; 
+  margin-top: -10px;
+  left: -7px;
+  margin-right: -15px;
+}
+
+h1 { 
+   position: absolute; 
+   top: 85px; 
+   left: 800px;  
+   color:orange;
+   font-size:50px;
+}
+body {
+  background-image: url("wall.jpg");
+}
+  .text {
+    font-size: 1.3rem;
+  color: #660020;
+  font-weight: 900;
+  font-family:Arial;
+   background:rgba(255,255,255,0.5);
+  position: absolute;
+  top:59.5%;
+  left:0;
+  padding:1.2rem;
+  transform:translateY(-60%);
+  text-align: justify;
+  z-index: 0;
+  -ms-transform-origin: 100% 0%;
+  -webkit-transform-origin: 100% 0%;
+  transform-origin: 100% 0%;
+   -webkit-animation: roll-out 1.2s ease-out ;
+  -moz-animation: roll-out 1.2s ease-out ;
+    animation: roll-out 1.2s ease-out ; 
+
+  -webkit-animation: scale-in 1.3s ease-out;
+  -moz-animation: scale-in 1.3s  ease-out;
+    animation: scale-in 1.3s ease-out;
+    text-align: justify;
+}
+  .hero {
+  width:960px;
+  margin:1.2rem auto;
+  position: relative;
+}
+@-webkit-keyframes scale-in {
+     0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(3, 4); opacity: 1;}
+}
+
+@keyframes scale-in {
+    0%   {transform: scale(10, 10); opacity: 0;}
+    100% {transform: scale(1, 1);  opacity: 1;}
+}
+
+@-webkit-keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+@keyframes roll-out {
+    0%   {width: 0;}
+    100% {width: 100%; }
+}
+iframe {
+  margin-top: 230px;
+}
+
+
+
+
